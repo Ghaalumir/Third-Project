@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>The code review</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+    <style>
+      body{
+        font-family: 'Merriwheater', serif;
+        margin:auto;
+      }
+    </style>
+</head>
+    
+<body>
+  <h1>THE CODE REVIEW</h1>
+  <form action="index.html" method="post">
+    <div class="form-top">
+      
+      <span>Sign up for our Newsletter</span>
+      <p>Get the latest news on how your code is doing right in your inbox</p>
+    </div>
+    
+    <fieldset class="primary">
+     <legend class="legend-1">Contact information:</legend><br>
+     <label for="name">Full name</label>
+     <input type="text" id="name" name="user_name" required>
+     <label for="mail">Email address</label>
+     <input type="email" id="mail" name="user_email" required>
+     <label for="phone">Phone number</label>
+     <input type="tel" id="phone" name="user_phone" required>
+     <label for="address">Street address</label>
+     <input type="text" id="address" name="user_address" required>
+     <label for="city">City</label>
+     <input type="text" id="city" name="user_city" required>
+     <label for ="state">State</label>
+     <select id="state" name="user_state">
+       <option value="lazio">Lazio</option>
+       <option value="calabria">Calabria</option>
+       <option value="umbria">Umbria</option>
+       <option value="sicilia">Sicilia</option>
+     </select>
+     <label for="zipcode">Zipcode</label>
+     <input type="text" id="zipcode" name="user_zipcode" required>
+    </fieldset>
+
+     <h2>Newsletter:</h2>
+        
+    <fieldset class="secondary">
+      <legend>1. Select newsletter you would like to receive...:</legend>
+        <input type="checkbox" id="htmlnews" value="interest_htmlnews" name="user_interest">
+        <label class="chose" for="htmlnews">HTML news</label><br>
+        <input type="checkbox" id="cssnews" value="interest_cssnews" name="user_interest">
+        <label class="chose" for="cssnews">CSS news</label><br>
+        <input type="checkbox" id="javascriptnews" value="interest_javascriptnews" name="user_interest">
+        <label class="chose" for="javascriptnews">JAVASCRIPT news</label>
+    </fieldset>
+
+    <fieldset class="tertiary">
+      <legend>2. Newsletter format...:</legend>
+       <input type="radio" id="html" value="html" name="user_newsletter_format"><label for="html" class="chose"> HTML </label><br>
+       <input type="radio" id="plaintext" value="plaintext" name="user_newsletter_format"><label for="plaintext" class="chose">  Plain text </label>
+    </fieldset>
+
+    <label for="name">Other topics you'd like to hear about</label>
+    <textarea id="writeus" name="user_writeus"></textarea>
+    <button type="submit">Sign up</button>
+    <p class="footer">Copyright The Code Review</p>
+        
+  </form>
+  
+</body>
+
+</html>
