@@ -2,47 +2,83 @@
 <html lang="en">
 <head>
   <title>The code review</title>
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-        
-    <style>
-      body{
-        font-family: 'Merriwheater', serif;
-        margin:auto;
-      }
-    </style>
+        <style>
+           body{
+             font-family: "Roboto", sans-serif;
+        }
+        </style>
 </head>
     
 <body>
   <h1>THE CODE REVIEW</h1>
-  <form action="index.html" method="post">
+  <form action="index.html" method="post" id="main-form">
     <div class="form-top">
       
       <span>Sign up for our Newsletter</span>
       <p>Get the latest news on how your code is doing right in your inbox</p>
+    
     </div>
     
     <fieldset class="primary">
-     <legend class="legend-1">Contact information:</legend><br>
+      
+  
+     
+     <legend class="legend-1">Contact information:</legend>
+   <div class="flex">
      <label for="name">Full name</label>
-     <input type="text" id="name" name="user_name" required>
+     <input placeholder="Full Name" type="text" id="name" name="user_name" required>
+    </div><br>
+     <div class="flex">
      <label for="mail">Email address</label>
-     <input type="email" id="mail" name="user_email" required>
+     <input placeholder="Email address" type="email" id="mail" name="user_email" required>
+    </div><br>
+     <div class="flex">
      <label for="phone">Phone number</label>
      <input type="tel" id="phone" name="user_phone" required>
+    </div><br>
+     <div class="flex">
      <label for="address">Street address</label>
      <input type="text" id="address" name="user_address" required>
+    </div><br>
+     <div class="flex">
      <label for="city">City</label>
      <input type="text" id="city" name="user_city" required>
-     <label for ="state">State</label>
-     <select id="state" name="user_state">
-       <option value="lazio">Lazio</option>
-       <option value="calabria">Calabria</option>
-       <option value="umbria">Umbria</option>
-       <option value="sicilia">Sicilia</option>
-     </select>
-     <label for="zipcode">Zipcode</label>
-     <input type="text" id="zipcode" name="user_zipcode" required>
+    </div><br>
+     <div class="flex">
+     <label for="state">State</label>
+       <select id="state" name="user_state">
+        <optgroup label="North of Italy"></optgroup>
+        <option value="Valle d'Aosta">Valle d'Aosta</option>
+        <option value="Piemonte">Piemonte</option>
+        <option value="Lombardia">Lombardia</option>
+        <option value="Trentino Alto Adige">Trentino Alto Adige</option>
+        <option value="Veneto">Veneto</option>
+        <option value="Liguria">Liguria</option>
+        <option value="Friuli Venezia Giulia">Friuli Venezia Giulia</option>
+        <optgroup label="Centre of Italy"></optgroup>
+        <option value="Lazio">Lazio</option>
+        <option value="Marche">Marche</option>
+        <option value="Toscana">Toscana</option>
+        <option value="Umbria">Umbria</option>
+        <optgroup label="South of Italy"></optgroup>
+        <option value="Abbruzzo">Abbruzzo</option>
+        <option value="Basilicata">Basilicata</option>
+        <option value="Campania">Campania</option>
+        <option value="Molise">Molise</option>
+        <option value="Puglia">Puglia</option>
+        <optgroup label="Islands">Islands</optgroup>
+        <option value="Sicilia">Sicilia</option>
+        <option value="Sardegna">Sardegna</option>
+      </select>
+      </div><br>
+       
+      <div class="flex">
+       <label for="zipcode">Zipcode</label>
+         <input type="text" id="zipcode" name="user_zipcode" required>
+        </div><br>
     </fieldset>
 
      <h2>Newsletter:</h2>
@@ -50,11 +86,11 @@
     <fieldset class="secondary">
       <legend>1. Select newsletter you would like to receive...:</legend>
         <input type="checkbox" id="htmlnews" value="interest_htmlnews" name="user_interest">
-        <label class="chose" for="htmlnews">HTML news</label><br>
+        <label for="htmlnews">HTML news</label><br>
         <input type="checkbox" id="cssnews" value="interest_cssnews" name="user_interest">
-        <label class="chose" for="cssnews">CSS news</label><br>
+        <label  for="cssnews">CSS news</label><br>
         <input type="checkbox" id="javascriptnews" value="interest_javascriptnews" name="user_interest">
-        <label class="chose" for="javascriptnews">JAVASCRIPT news</label>
+        <label for="javascriptnews">JAVASCRIPT news</label>
     </fieldset>
 
     <fieldset class="tertiary">
@@ -63,8 +99,8 @@
        <input type="radio" id="plaintext" value="plaintext" name="user_newsletter_format"><label for="plaintext" class="chose">  Plain text </label>
     </fieldset>
 
-    <label for="name">Other topics you'd like to hear about</label>
-    <textarea id="writeus" name="user_writeus"></textarea>
+    <label for="writeus">Other topics you'd like to hear about</label>
+    <textarea placeholder="Describe yourself here..." id="writeus" name="user_writeus"></textarea> 
     <button type="submit">Sign up</button>
     <p class="footer">Copyright The Code Review</p>
         
@@ -73,3 +109,4 @@
 </body>
 
 </html>
+
